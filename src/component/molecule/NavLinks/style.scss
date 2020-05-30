@@ -1,0 +1,13 @@
+@import 'variables';
+@import 'mixins';
+
+.navList {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+.navItem {
+  @include gutter($size: 20px);
+  padding: 2px 7px;
+}

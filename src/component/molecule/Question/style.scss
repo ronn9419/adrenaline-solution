@@ -1,0 +1,19 @@
+@import 'variables';
+
+.container {
+  margin: 23px 0 29px 0;
+}
+
+.title {
+  color: $dark-1;
+  font: $font-subheader-1;
+  letter-spacing: -0.5px;
+  margin: 0 0 6px 0;
+}
+
+.body {
+  font: $font-text-1;
+  letter-spacing: 0;
+  color: $dark-3;
+  margin-top: 8px;
+}

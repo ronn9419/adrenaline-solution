@@ -1,0 +1,33 @@
+@import 'variables';
+@import 'mixins';
+
+.appFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid $dark-1;
+  padding-top: 3px;
+
+  @include screen-phone {
+    flex-direction: column;
+    padding-top: 32px;
+  }
+}
+
+.logo {
+  margin-left: -4px;
+}
+
+.nav {
+  & ul {
+    @include screen-phone {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    & li {
+      @include gutter($size: 0);
+    }
+  }
+}

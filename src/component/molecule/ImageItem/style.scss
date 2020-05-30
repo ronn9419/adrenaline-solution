@@ -1,0 +1,38 @@
+@import 'variables';
+
+.container {
+  position: relative;
+  padding-bottom: 49px;
+}
+
+.image {
+  width: 100%;
+}
+
+.tag {
+  position: absolute;
+  top: -1;
+  right: calc(100% + 1px);
+  background-color: $light;
+  height: 24px;
+  width: auto;
+  white-space: nowrap;
+  padding-left: $spacing-2;
+  font: $font-tag;
+  letter-spacing: 0.87px;
+  text-align: right;
+
+  transform: rotateZ(-90deg);
+  transform-origin: top right;
+}
+
+.title {
+  font: $font-subheader-2;
+  letter-spacing: -0.2px;
+  margin-top: 25px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+}

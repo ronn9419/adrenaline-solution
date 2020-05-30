@@ -1,0 +1,28 @@
+@import 'variables';
+@import 'mixins';
+
+.title {
+  font: $font-header-1;
+  color: $dark-2;
+  letter-spacing: -1.91px;
+  margin-bottom: 22px;
+
+  @include screen-tablet-down {
+    font: $font-header-2;
+    margin-top: 0;
+  }
+}
+
+.sortBtn {
+  font: $font-link-2;
+  letter-spacing: 0.5px;
+  color: $link;
+  cursor: pointer;
+  user-select: none;
+
+  & img {
+    position: relative;
+    top: 3px;
+    left: 2px;
+  }
+}

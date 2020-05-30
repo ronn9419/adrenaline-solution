@@ -1,0 +1,8 @@
+node_modules
+.cache
+dist
+.vs_code
+build
+dist
+env.*.js
+env.js

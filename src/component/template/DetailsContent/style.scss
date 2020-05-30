@@ -1,0 +1,20 @@
+@import 'variables';
+@import 'mixins';
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+
+  @include screen-tablet-down {
+    grid-template-columns: 1fr;
+  }
+}
+
+.detailsContainer {
+  padding: 42px 32px 42px 97px;
+
+  @include screen-tablet-down {
+    padding: 15px;
+  }
+}

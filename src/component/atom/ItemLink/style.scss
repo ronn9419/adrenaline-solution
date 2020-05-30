@@ -1,0 +1,19 @@
+@import 'variables';
+
+.link {
+  color: $link;
+  font: $font-link-2;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  display: inline-flex;
+  align-items: center;
+
+  &::before {
+    content: '';
+    width: 32px;
+    height: 2px;
+    background-color: $link;
+    display: inline-block;
+    margin: 0 16px 0 1px;
+  }
+}

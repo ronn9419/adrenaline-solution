@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap');
+
+@import '~normalize-scss/sass/normalize/import-now';
+@import 'variables';
+
+body {
+  font-family: $font-family-1;
+  background-color: $app-bg-color;
+}

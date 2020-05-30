@@ -1,0 +1,21 @@
+@import 'variables';
+@import 'mixins';
+
+.appHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 22px;
+}
+
+.nav {
+  @include screen-phone {
+    display: none;
+  }
+}
+
+.mobileMenu {
+  @include screen-tablet-up {
+    display: none;
+  }
+}

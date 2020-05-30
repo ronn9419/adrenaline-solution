@@ -1,0 +1,71 @@
+@import 'variables';
+
+@mixin gutter($size, $direction: row) {
+  $marginSize: $size / 2;
+
+  @if $direction == row {
+    margin: 0 $marginSize;
+    &:first-of-type {
+      margin-left: 0;
+    }
+    &:last-of-type {
+      margin-right: 0;
+    }
+  } @else if $direction == column {
+    margin: $marginSize 0;
+    &:first-of-type {
+      margin-top: 0;
+    }
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@mixin screen-phone {
+  @media screen and (max-width: ($breakpoint-m - 1) + 'px') {
+    @content;
+  }
+}
+
+@mixin screen-tablet {
+  @media screen and (min-width: $breakpoint-m + 'px') and (max-width: ($breakpoint-l - 1) + 'px') {
+    @content;
+  }
+}
+
+@mixin screen-desktop {
+  @media screen and (min-width: $breakpoint-l + 'px') and (max-width: ($breakpoint-xl - 1) + 'px') {
+    @content;
+  }
+}
+
+@mixin screen-desktop-l {
+  @media screen and (min-width: $breakpoint-xl + 'px') {
+    @content;
+  }
+}
+
+@mixin screen-tablet-up {
+  @media screen and (min-width: $breakpoint-m + 'px') {
+    @content;
+  }
+}
+
+@mixin screen-desktop-up {
+  @media screen and (min-width: $breakpoint-l + 'px') {
+    @content;
+  }
+}
+
+@mixin screen-desktop-down {
+  @media screen and (max-width: ($breakpoint-xl - 1) + 'px') {
+    @content;
+  }
+}
+
+@mixin screen-tablet-down {
+  @media screen and (max-width: ($breakpoint-l - 1) + 'px') {
+    @content;
+  }
+}

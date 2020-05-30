@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "@component/*": ["./src/component/*"],
+      "@container/*": ["./src/container/*"],
+      "@src/*": ["./src/*"],
+      "@screen/*": ["./src/screen/*"],
+      "@service/*": ["./src/service/*"],
+      "@screen": ["./src/screen/index.js"],
+      "@styles/*": ["./src/styles/*"]
+    },
+    "moduleResolution": "node",
+    "checkJs": true,
+    "resolveJsonModule": true,
+    "target": "es2015",
+    "module": "esnext"
+  },
+  "types": ["cypress"],
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", "build"]
+}

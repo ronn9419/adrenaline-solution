@@ -1,0 +1,13 @@
+@import 'variables';
+@import 'mixins';
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 68px 32px;
+
+  @include screen-tablet-down {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
