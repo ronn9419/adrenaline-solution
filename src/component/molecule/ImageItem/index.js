@@ -13,7 +13,7 @@ export default ({ data: { id, thumb, title_long, tag }, generateUrl }) => {
       <span className={style.tag}>{tag}</span>
 
       <Link to={url}>
-        <div className={style.imageContainer}>
+        <div className={style.imageContainer} data-test-id="image-link">
           <img src={`/assets/images/${thumb}`} className={style.image} />
         </div>
       </Link>

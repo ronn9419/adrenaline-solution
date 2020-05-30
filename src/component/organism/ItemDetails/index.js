@@ -44,7 +44,11 @@ export default ({ questions, title }) => {
       <h2 className={style.title}>{title}</h2>
 
       <div>
-        <span className={style.sortBtn} onClick={toggleSort}>
+        <span
+          className={style.sortBtn}
+          onClick={toggleSort}
+          data-test-id="sort-by"
+        >
           SORT BY {orderBy === ORDER_BY.DESC ? 'OLDEST' : 'LATEST'}
           <img src="/assets/svg/sort.svg" />
         </span>
