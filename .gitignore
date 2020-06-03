@@ -3,6 +3,7 @@ node_modules
 dist
 .vs_code
 build
+buildTest
 dist
 env.*.js
 env.js

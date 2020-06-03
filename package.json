@@ -6,7 +6,9 @@
   "scripts": {
     "start": "rimraf dist .cache && parcel ./src/index.html -p 3030 --no-cache",
     "build": "rimraf build && parcel build ./src/index.html -d build --no-source-maps",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy:test": "rimraf buildTest .cache && parcel build ./src/index.html -d buildTest --no-source-maps && serve buildTest -l 3031 -s",
+    "cypress:open": "cypress open",
+    "test": "start-server-and-test deploy:test http://localhost:3031 cypress:open"
   },
   "keywords": [],
   "author": "Ronald V. Gipa",
