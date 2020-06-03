@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import CardTag from '@component/atom/CardTag'
 import ItemLink from '@component/atom/ItemLink'
 
 import style from './style.scss'
@@ -10,7 +11,7 @@ export default ({ data: { id, thumb, title_long, tag }, generateUrl }) => {
 
   return (
     <div className={style.container}>
-      <span className={style.tag}>{tag}</span>
+      <CardTag>{tag}</CardTag>
 
       <Link to={url}>
         <div className={style.imageContainer}>
